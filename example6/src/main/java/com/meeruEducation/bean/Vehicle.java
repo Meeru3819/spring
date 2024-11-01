@@ -1,7 +1,5 @@
 package com.meeruEducation.bean;
 
-import org.springframework.stereotype.Component;
-
 public class Vehicle {
     private String name;
 
