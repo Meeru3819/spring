@@ -12,6 +12,9 @@ public class Main {
 
         var context = new AnnotationConfigApplicationContext(ProjectConfiguration.class);
 
+        Vehicle vehicle = context.getBean(Vehicle.class);
+        System.out.println("Sprint context vehicle name is = " + vehicle.getName());
+
         Vehicle audiVehicle = context.getBean("audiVehicle", Vehicle.class);
         System.out.println("Sprint context vehicle name is = " + audiVehicle.getName());
 
